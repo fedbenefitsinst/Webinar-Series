@@ -87,5 +87,13 @@
       msallowfullscreen>
     </iframe>
   </div>
+
+  <!-- Fire GTM event for TikTok conversion tracking -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'formSubmitted' });
+    console.log('✅ GTM: formSubmitted event fired');
+  </script>
 </body>
 </html>
+
