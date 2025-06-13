@@ -1,11 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Event Registration</title>
+  <title>Federal Benefits Webinar Registration</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WLDDL7PT');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Ads Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17156296471"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,34 +26,66 @@
   </script>
 
   <style>
-    html, body {
+    * { box-sizing: border-box; }
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      background: #f4f4f4;
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #ffffff;
+      width: 100%;
+      max-width: 750px;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 1.75rem;
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 1rem;
     }
     iframe {
       width: 100%;
-      max-width: 640px;
-      height: 90vh;
+      height: 80vh;
       border: none;
+      border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+      iframe {
+        height: 70vh;
+      }
     }
   </style>
 </head>
 <body>
-  <iframe 
-    src="https://forms.office.com/Pages/ResponsePage.aspx?id=encB2h3YcUSUzb3eCSF6YOu4Dmnu-mtEmPDDvJuxgEhUQ1NWN0RFR0ozTVU2VlFNMjMzTlFMRTROQy4u&embed=true"
-    frameborder="0"
-    marginwidth="0"
-    marginheight="0"
-    allowfullscreen
-    webkitallowfullscreen
-    mozallowfullscreen
-    msallowfullscreen>
-  </iframe>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLDDL7PT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+    <h1>Register for Your Complimentary Federal Benefits Webinar</h1>
+    <iframe 
+      src="https://forms.office.com/Pages/ResponsePage.aspx?id=encB2h3YcUSUzb3eCSF6YOu4Dmnu-mtEmPDDvJuxgEhUQ1NWN0RFR0ozTVU2VlFNMjMzTlFMRTROQy4u&embed=true"
+      allowfullscreen 
+      webkitallowfullscreen 
+      mozallowfullscreen 
+      msallowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
